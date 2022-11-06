@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Showcase from '../components/Showcase.astro';
 import Features from '../components/Features.astro';
+import Tabs from '../components/Tabs.astro';
 ---
 
 <Layout>
@@ -15,6 +16,15 @@ import Features from '../components/Features.astro';
         Get a new Astro project up and running locally with our helpful
         create-astro CLI wizard!
       </p>
+
+      <Tabs
+        headings={['NPM', 'PNPM', 'YARN']}
+        contents={[
+          '$ npm create astro@latest',
+          '$ pnpm create astro@latest',
+          '$ yarn create astro',
+        ]}
+      />
 
       <h3>Start Building</h3>
       <p>
