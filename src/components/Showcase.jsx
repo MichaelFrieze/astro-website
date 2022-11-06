@@ -1,5 +1,9 @@
+import { useState } from 'react';
+
 function Showcase() {
-  return <div>Showcase</div>;
+  const [name, setName] = useState('John Doe');
+
+  return <div>Hello {name}</div>;
 }
 
 export default Showcase;
